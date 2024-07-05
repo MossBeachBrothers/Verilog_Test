@@ -7,52 +7,52 @@
 :vpi_module "/opt/local/lib/ivl/vhdl_textio.vpi";
 :vpi_module "/opt/local/lib/ivl/v2005_math.vpi";
 :vpi_module "/opt/local/lib/ivl/va_math.vpi";
-S_0x156e090e0 .scope module, "tb_half_adder" "tb_half_adder" 2 1;
+S_0x133705650 .scope module, "tb_half_adder" "tb_half_adder" 2 1;
  .timescale 0 0;
-v0x156e1f310_0 .var "A", 0 0;
-v0x156e1f3b0_0 .var "B", 0 0;
-v0x156e1f460_0 .net "Carry", 0 0, L_0x156e1f730;  1 drivers
-v0x156e1f530_0 .net "Sum", 0 0, L_0x156e1f5e0;  1 drivers
-S_0x156e09250 .scope module, "uut" "half_adder" 2 10, 3 2 0, S_0x156e090e0;
+v0x133718640_0 .var "A", 0 0;
+v0x1337186e0_0 .var "B", 0 0;
+v0x133718790_0 .net "Carry", 0 0, L_0x133718a60;  1 drivers
+v0x133718860_0 .net "Sum", 0 0, L_0x133718910;  1 drivers
+S_0x1337057c0 .scope module, "uut" "half_adder" 2 10, 3 2 0, S_0x133705650;
  .timescale 0 0;
     .port_info 0 /INPUT 1 "A";
     .port_info 1 /INPUT 1 "B";
     .port_info 2 /OUTPUT 1 "Sum";
     .port_info 3 /OUTPUT 1 "Carry";
-L_0x156e1f5e0 .functor XOR 1, v0x156e1f310_0, v0x156e1f3b0_0, C4<0>, C4<0>;
-L_0x156e1f730 .functor AND 1, v0x156e1f310_0, v0x156e1f3b0_0, C4<1>, C4<1>;
-v0x156e08ae0_0 .net "A", 0 0, v0x156e1f310_0;  1 drivers
-v0x156e1f0c0_0 .net "B", 0 0, v0x156e1f3b0_0;  1 drivers
-v0x156e1f160_0 .net "Carry", 0 0, L_0x156e1f730;  alias, 1 drivers
-v0x156e1f210_0 .net "Sum", 0 0, L_0x156e1f5e0;  alias, 1 drivers
-    .scope S_0x156e090e0;
+L_0x133718910 .functor XOR 1, v0x133718640_0, v0x1337186e0_0, C4<0>, C4<0>;
+L_0x133718a60 .functor AND 1, v0x133718640_0, v0x1337186e0_0, C4<1>, C4<1>;
+v0x133705050_0 .net "A", 0 0, v0x133718640_0;  1 drivers
+v0x1337183f0_0 .net "B", 0 0, v0x1337186e0_0;  1 drivers
+v0x133718490_0 .net "Carry", 0 0, L_0x133718a60;  alias, 1 drivers
+v0x133718540_0 .net "Sum", 0 0, L_0x133718910;  alias, 1 drivers
+    .scope S_0x133705650;
 T_0 ;
     %vpi_call 2 20 "$display", "A B | Sum Carry" {0 0 0};
     %vpi_call 2 21 "$display", "-------------" {0 0 0};
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x156e1f310_0, 0, 1;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x156e1f3b0_0, 0, 1;
-    %delay 10, 0;
-    %vpi_call 2 24 "$display", "%b %b |  %b    %b", v0x156e1f310_0, v0x156e1f3b0_0, v0x156e1f530_0, v0x156e1f460_0 {0 0 0};
+    %store/vec4 v0x133718640_0, 0, 1;
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x156e1f310_0, 0, 1;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x156e1f3b0_0, 0, 1;
+    %store/vec4 v0x1337186e0_0, 0, 1;
     %delay 10, 0;
-    %vpi_call 2 27 "$display", "%b %b |  %b    %b", v0x156e1f310_0, v0x156e1f3b0_0, v0x156e1f530_0, v0x156e1f460_0 {0 0 0};
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x156e1f310_0, 0, 1;
+    %vpi_call 2 24 "$display", "%b %b |  %b    %b", v0x133718640_0, v0x1337186e0_0, v0x133718860_0, v0x133718790_0 {0 0 0};
     %pushi/vec4 0, 0, 1;
-    %store/vec4 v0x156e1f3b0_0, 0, 1;
-    %delay 10, 0;
-    %vpi_call 2 31 "$display", "%b %b |  %b    %b", v0x156e1f310_0, v0x156e1f3b0_0, v0x156e1f530_0, v0x156e1f460_0 {0 0 0};
+    %store/vec4 v0x133718640_0, 0, 1;
     %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x156e1f310_0, 0, 1;
-    %pushi/vec4 1, 0, 1;
-    %store/vec4 v0x156e1f3b0_0, 0, 1;
+    %store/vec4 v0x1337186e0_0, 0, 1;
     %delay 10, 0;
-    %vpi_call 2 34 "$display", "%b %b |  %b    %b", v0x156e1f310_0, v0x156e1f3b0_0, v0x156e1f530_0, v0x156e1f460_0 {0 0 0};
+    %vpi_call 2 27 "$display", "%b %b |  %b    %b", v0x133718640_0, v0x1337186e0_0, v0x133718860_0, v0x133718790_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x133718640_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x1337186e0_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 31 "$display", "%b %b |  %b    %b", v0x133718640_0, v0x1337186e0_0, v0x133718860_0, v0x133718790_0 {0 0 0};
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x133718640_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x1337186e0_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 34 "$display", "%b %b |  %b    %b", v0x133718640_0, v0x1337186e0_0, v0x133718860_0, v0x133718790_0 {0 0 0};
     %vpi_call 2 36 "$stop" {0 0 0};
     %end;
     .thread T_0;

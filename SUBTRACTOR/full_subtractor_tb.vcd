@@ -1,5 +1,5 @@
 $date
-	Fri Jul  5 10:57:04 2024
+	Fri Jul  5 11:46:25 2024
 $end
 $version
 	Icarus Verilog
@@ -7,32 +7,32 @@ $end
 $timescale
 	1s
 $end
-$scope module tb_full_adder $end
-$var wire 1 ! Sum $end
-$var wire 1 " Cout $end
+$scope module tb_full_subtractor $end
+$var wire 1 ! Difference $end
+$var wire 1 " Bout $end
 $var reg 1 # A $end
 $var reg 1 $ B $end
-$var reg 1 % Cin $end
+$var reg 1 % Bin $end
 $scope module uut $end
 $var wire 1 # A $end
 $var wire 1 $ B $end
-$var wire 1 % Cin $end
-$var wire 1 " Cout $end
-$var wire 1 & Sum1 $end
-$var wire 1 ! Sum $end
-$var wire 1 ' Carry2 $end
-$var wire 1 ( Carry1 $end
-$scope module ha1 $end
+$var wire 1 % Bin $end
+$var wire 1 " Bout $end
+$var wire 1 & Difference1 $end
+$var wire 1 ! Difference $end
+$var wire 1 ' Borrow2 $end
+$var wire 1 ( Borrow1 $end
+$scope module hs1 $end
 $var wire 1 # A $end
 $var wire 1 $ B $end
-$var wire 1 ( Carry $end
-$var wire 1 & Sum $end
+$var wire 1 ( Borrow $end
+$var wire 1 & Difference $end
 $upscope $end
-$scope module ha2 $end
+$scope module hs2 $end
 $var wire 1 & A $end
 $var wire 1 % B $end
-$var wire 1 ' Carry $end
-$var wire 1 ! Sum $end
+$var wire 1 ' Borrow $end
+$var wire 1 ! Difference $end
 $upscope $end
 $upscope $end
 $upscope $end
